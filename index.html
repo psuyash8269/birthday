@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head onload="PLAY()">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Happy Birthday</title>
+  </head>
+  <body >
+    <audio autoplay id="apnaAudio">
+      <source src="hpb.mp3" type="audio/mp3"  />
+    </audio>
+    <div class="card">
+      <img src="./birthday.svg" alt="birthday" class="birthday" />
+      <div class="text">
+        <h1>Happy  Birthday!</h1>
+        <p class="muted"> <h4> Nidhi</h4> </p>
+        <p>I hope you have a wonderful birthday</p>
+      </div>
+      <div class="space"></div>
+      <!-- <br><br><br> -->
+    </div>
+    <button type="button" class="btn btn-success" onclick="PLAY()">Success</button>
+  </body>
+
+  <script>
+    function PLAY() {
+      setTimeout(() => {
+        document.getElementById("apnaAudio").play()
+      }, 1000);
+    }
+  </script>
+</html>
